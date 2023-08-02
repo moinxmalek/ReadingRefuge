@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Web Page with Book Photo</title>
+  <style>
+    body {
+      font-family:'Times New Roman', Times, serif;;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-right: 10px;
+    }
+
+    /* Photo */
+    .photo-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo {
+      width: 300px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    /* Interactive styles */
+    nav ul li:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s;
+    }
+
+    section:hover {
+      background-color: #f5f5f5;
+      transform: rotate(2deg);
+      transition: background-color 0.5s, transform 0.2s;
+    }
+
+    footer:hover {
+      background-color: #444;
+      transform: scale(1.2);
+      transition: background-color 0.5s, transform 0.2s;
+    }
+
+    /* Book Photo Tooltip */
+    .book-icon {
+      position: relative;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .book-icon img {
+      width: 100px;
+      height: 150px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .book-icon .tooltip {
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+    }
+
+    .book-icon:hover .tooltip {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+    
+  <header>
+    <div class="logo">The Reading Refuge</div>
+  <!--<div class="photo-container">
+      <img src="icons.jpg" alt="Book Photo" class="photo">-->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Picks</a></li>
+        <li><a href="#">Most Popular</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+     
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Welcome to The Reading Refuge </h1>
+    <p>A Haven for Book Lovers </p>
+
+    <!-- Book Photo Tooltip -->
+    <div class="book-icon">
+      <img src="potter.jpg" alt="Book">
+      <div class="tooltip">The book is about 11 year old Harry Potter, who receives a letter saying that he is invited to attend Hogwarts, school of witchcraft and wizardry.<<br>Author: J. K. Rowling</div>
+    </div>
+ 
+<!-- Book Photo Tooltip -->
+<div class="book-icon">
+    <img src="gatsby.jpg" alt="Book">
+    <div class="tooltip"> The-Great-Gatsby the tragic story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth.<br>Author: Scott Fitzgerald</div>
+  </div>
+
+
+  <!-- Book Photo Tooltip -->
+  <div class="book-icon">
+    <img src="atomic.jpg" alt="Book">
+    <div class="tooltip">Atomic Habits by James Clear is a comprehensive, practical guide on how to change your habits and get 1% better every day.<br>Author: James Clear</div>
+  </div>
+
+  <!-- Book Photo Tooltip -->
+  <div class="book-icon">
+    <img src="two.jpg" alt="Book">
+    <div class="tooltip"> It is the story about a couple coming from two states in India, who face hardships in convincing their parents to approve of their marriage.<br>Author: Chetan Bhagat</div>
+  </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 The Reading Refuge. All rights reserved.</p>
+  </footer>
+</body>
+</html>
